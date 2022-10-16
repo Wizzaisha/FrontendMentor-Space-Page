@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/space-page/static/css/main.cc3cbc3a.css",
-    "main.js": "/space-page/static/js/main.356bdeee.js",
-    "static/js/787.b94b10c7.chunk.js": "/space-page/static/js/787.b94b10c7.chunk.js",
-    "static/media/background-home-desktop.jpg": "/space-page/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
-    "static/media/background-home-tablet.jpg": "/space-page/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
-    "static/media/background-home-mobile.jpg": "/space-page/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
-    "index.html": "/space-page/index.html",
-    "main.cc3cbc3a.css.map": "/space-page/static/css/main.cc3cbc3a.css.map",
-    "main.356bdeee.js.map": "/space-page/static/js/main.356bdeee.js.map",
-    "787.b94b10c7.chunk.js.map": "/space-page/static/js/787.b94b10c7.chunk.js.map"
+    "main.css": "/static/css/main.5a39c41a.css",
+    "main.js": "/static/js/main.1df3696b.js",
+    "static/js/787.b94b10c7.chunk.js": "/static/js/787.b94b10c7.chunk.js",
+    "static/media/background-home-desktop.jpg": "/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/background-home-tablet.jpg": "/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
+    "static/media/background-home-mobile.jpg": "/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "index.html": "/index.html",
+    "main.5a39c41a.css.map": "/static/css/main.5a39c41a.css.map",
+    "main.1df3696b.js.map": "/static/js/main.1df3696b.js.map",
+    "787.b94b10c7.chunk.js.map": "/static/js/787.b94b10c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc3cbc3a.css",
-    "static/js/main.356bdeee.js"
+    "static/css/main.5a39c41a.css",
+    "static/js/main.1df3696b.js"
   ]
 }
