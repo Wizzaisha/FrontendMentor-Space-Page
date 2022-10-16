@@ -6,7 +6,7 @@ export default function NotFoundRoute () {
 
     return (
         <div className="notFoundContainer">
-            <h1 className="heading1 ntTitle">There's nothing here!</h1>
+            <p className="heading1 ntTitle">There's nothing here!</p>
             <Link to={"/"} className="btnBack">Go Home</Link>
         </div>
     )

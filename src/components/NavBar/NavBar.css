@@ -61,6 +61,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
+  list-style-type: none;
 }
 
 .navBarContainer {
