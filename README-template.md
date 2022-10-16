@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,81 +32,123 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Wizzaisha/space-page)
+- Live Site URL: [Add live site URL here](https://space-page-hdo3uqy54-wizzaisha.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. I learned a lot of interesting things, one was setting dynamic backgrounds in the app, depending the route; for that I established variables in the index.css for the differents sizes (desktop, tablet and mobile) and did a function that takes the images required and using js I changed the variables depending of the route, as you can see in the code:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+  --desktop: url("../public/assets/home/background-home-desktop.jpg");
+  --tablet: url("../public/assets/home/background-home-mobile.jpg");
+  --mobile: url("../public/assets/home/background-home-tablet.jpg");
 }
 ```
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function setBackground(desktop, tablet, mobile) {
+  document.body.style.setProperty("--desktop", `url(${desktop})`);
+  document.body.style.setProperty("--tablet", `url(${tablet})`);
+  document.body.style.setProperty("--mobile", `url(${mobile})`);
+}
+
+if (location.pathname === "/") {
+  setBackground(
+    imagesApp.home.desktop,
+    imagesApp.home.tablet,
+    imagesApp.home.mobile
+  );
+} else if (location.pathname === "/destination") {
+  setBackground(
+    imagesApp.destination.desktop,
+    imagesApp.destination.tablet,
+    imagesApp.destination.mobile
+  );
+} else if (location.pathname === "/crew") {
+  setBackground(
+    imagesApp.crew.desktop,
+    imagesApp.crew.tablet,
+    imagesApp.crew.mobile
+  );
+} else if (location.pathname === "/technology") {
+  setBackground(
+    imagesApp.technology.desktop,
+    imagesApp.technology.tablet,
+    imagesApp.technology.mobile
+  );
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+2. Another interesting thing that I learned, was doing a component for all the navbars that I needed in the challenge, where I just did a component with the basic settings, styles and functionalities needed and then calling it in the componentes where I require it, for example the destination, crew and technology page, whose have differents types of navigation bars.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```js
+<SlideBar
+  arrData={arrData}
+  handleNavBar={getDestiny}
+  currentData={destiny.toUpperCase()}
+  hoverType="line"
+  styleBar={styleDestBar}
+/>
+```
+
+```js
+export default function SlideBar({
+  arrData,
+  handleNavBar,
+  currentData,
+  hoverType,
+  styleBar,
+}) {
+  return (
+    <ul style={styleBar.bar} className="navBarStyles">
+      {arrData &&
+        arrData.map((element, index) => {
+          return (
+            <div key={element + index}>
+              <li
+                className={`navText ${
+                  hoverType === "line"
+                    ? "hoverLine"
+                    : hoverType === "point"
+                    ? "hoverPoint pointStyle"
+                    : hoverType === "number"
+                    ? "hoverNumber numberStyle"
+                    : ""
+                }`}
+                style={currentData === element ? styleBar.link : null}
+                onClick={() => handleNavBar(element)}
+              >
+                {hoverType === "point" ? <span>&#9679;</span> : element}
+              </li>
+            </div>
+          );
+        })}
+    </ul>
+  );
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Now I want to be more organized and clear with my code, there are a lot of things that I need to be aware of, such as moduralize functionalities, do a better job cleaning the code and improve my skills for css styles. Also, I want to try to do future proyects in tyscript, include redux and use a backend or api.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3Schools](https://www.w3schools.com/) - This helped me for find useful information about js, css and html.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Ever Ramirez](https://portafolio-ever.vercel.app/)
+- Frontend Mentor - [@Wizzaisha](https://www.frontendmentor.io/profile/Wizzaisha)
+- Twitter - [@Wizz2\_](https://twitter.com/Wizz2_)
