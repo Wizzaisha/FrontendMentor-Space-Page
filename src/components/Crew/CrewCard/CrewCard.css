@@ -1,0 +1,63 @@
+.infoCardCrew {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.textCrew {
+  margin-top: -100px;
+}
+
+.textCrewBio {
+  padding: 0 17rem 0 0;
+}
+
+.crewImg {
+  margin-top: -100px;
+  height: 100vh;
+  text-align: center;
+}
+
+.crewSubtitle {
+  color: rgb(101, 101, 101);
+}
+
+.crewTitle {
+  margin-top: -20px;
+}
+
+@media (max-width: 1200px) {
+  .infoCardCrew {
+    flex-direction: column;
+    text-align: center;
+  }
+  .crewImg {
+    margin-top: 10px;
+  }
+
+  .crewImg img {
+    width: 100%;
+    height: auto;
+  }
+  .textCrewBio {
+    padding: 0 7rem;
+  }
+  .slideCrew {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .textCrew {
+    margin: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .textCrewBio {
+    padding: 0;
+  }
+}

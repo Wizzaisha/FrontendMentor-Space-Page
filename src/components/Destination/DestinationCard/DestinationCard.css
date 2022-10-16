@@ -1,0 +1,75 @@
+.destinyCard {
+  gap: 4rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoCardDestiny {
+  padding: 0 6rem;
+  margin-right: 80px;
+}
+
+.destTitle {
+  margin-bottom: -40px;
+  margin-top: -30px;
+}
+
+.cardImg {
+  padding: 0 3rem;
+}
+
+.destinyHr {
+  margin-top: 40px;
+  background-color: rgba(128, 128, 128, 0.258);
+  border: 0.1px solid rgba(128, 128, 128, 0.323);
+}
+
+.subInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .destinyCard {
+    gap: 2rem;
+  }
+
+  .infoCardDestiny {
+    margin-right: 0;
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .destinyCard {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .subInfo {
+    justify-content: center;
+  }
+  .cardImg {
+    height: 350px;
+    width: 350px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardImg {
+    height: 200px;
+    width: 200px;
+  }
+  .subInfo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

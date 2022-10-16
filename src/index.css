@@ -1,13 +1,103 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --desktop: url("../public/assets/home/background-home-desktop.jpg");
+  --tablet: url("../public/assets/home/background-home-mobile.jpg");
+  --mobile: url("../public/assets/home/background-home-tablet.jpg");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Barlow Condensed", serif;
+  font-size: 20px;
+  margin: 0;
+  line-height: 2;
+  color: #d0d6f9e3;
+  background-image: var(--desktop);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0b0d17;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0%;
+}
+
+button {
+  font-family: "Bellefair", serif;
+}
+
+/* General fonts */
+
+.heading1 {
+  font-family: "Bellefair", serif;
+  font-size: 150px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.heading2 {
+  font-family: "Bellefair", serif;
+  font-size: 100px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.heading3 {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.heading4 {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.heading5 {
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed", serif;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.subheading1 {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.subheading2 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  font-weight: lighter;
+}
+
+.navText {
+  letter-spacing: 2.7px;
+  font-size: 16px;
+}
+
+.numberTitle {
+  color: rgba(82, 82, 82, 0.852);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: var(--tablet);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-image: var(--mobile);
+    background-size: cover;
+  }
 }

@@ -1,0 +1,50 @@
+.techCard {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.navAndInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+}
+
+.imgTech {
+  position: absolute;
+  right: 0;
+  top: 320px;
+}
+.infoTech {
+  width: 40%;
+}
+
+@media (max-width: 1200px) {
+  .imgTech {
+    position: inherit;
+    text-align: center;
+    margin-top: -70px;
+  }
+
+  .imgTech img {
+    width: 100%;
+    height: auto;
+  }
+  .techCard {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navAndInfo {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .infoTech {
+    width: 100%;
+    text-align: center;
+  }
+}

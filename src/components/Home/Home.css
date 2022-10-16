@@ -1,0 +1,86 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.homeButton {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 1px #0b0d17 solid;
+  cursor: pointer;
+}
+
+.divButtonHome {
+  padding-top: 30px;
+}
+
+.homeButton:hover {
+  box-sizing: content-box;
+  border: 60px #000000cb solid;
+  margin-top: 0;
+}
+
+.homeContent p,
+h4 {
+  text-align: left;
+  margin-bottom: -50px;
+}
+
+.homeContent h2 {
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .homeContent p,
+  h4 {
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+  }
+  .homeButton {
+    margin-top: 50px;
+  }
+  .homeContent p,
+  h4 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .home {
+    padding: 0 1rem 3rem 1rem;
+    font-size: 18px;
+  }
+  .homeContent p,
+  h4 {
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .heading1 {
+    font-size: 75px;
+  }
+
+  .heading5 {
+    font-size: 22px;
+  }
+
+  .homeButton {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,27 @@
+.notFoundContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ntTitle {
+  padding: 3rem 0 0 0;
+}
+
+.btnBack {
+  width: 100px;
+  padding: 3rem 2rem;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  margin: 2rem;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #ffffff;
+}
+
+.btnBack:hover {
+  border: 20px solid #35363a;
+}

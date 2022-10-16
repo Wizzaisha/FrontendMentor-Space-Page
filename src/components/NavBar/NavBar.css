@@ -1,0 +1,163 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.links {
+  position: relative;
+}
+
+.activeLink {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: -40px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.activeLink2 {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: -40px;
+  border: 2px solid rgba(128, 128, 128, 0.673);
+  background-color: rgba(128, 128, 128, 0.673);
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.lineNav hr {
+  width: 500px;
+  border: 0.5px solid rgba(128, 128, 128, 0.673);
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  z-index: 1;
+}
+
+.logoNav {
+  height: 48px;
+  width: 48px;
+  margin: 2rem 0 0 2rem;
+}
+
+.closeIcon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navBarContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.059);
+  backdrop-filter: blur(20px);
+  height: 100px;
+  padding: 0 7rem;
+  margin-top: 40px;
+}
+
+.hamburgerIcon {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 2rem;
+  margin-top: 30px;
+}
+
+.numNav {
+  display: none;
+}
+
+.displayMenu {
+  display: inline-block;
+}
+
+.displayHamburger {
+  display: none;
+}
+
+.displayClose {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .lineNav hr {
+    display: block;
+  }
+  .numNav {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navBarContainer {
+    padding: 0 0.5rem;
+  }
+  .navbar {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .displayMenu {
+    display: none;
+  }
+
+  .displayHamburger {
+    display: inline-block;
+  }
+
+  .activeLink {
+    display: none;
+  }
+
+  .displayClose {
+    display: inline-block;
+  }
+
+  .closeIcon {
+    margin-top: 30px;
+    margin-left: 200px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 5rem 0 0 -2rem;
+  }
+
+  .navBarContainer {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 1rem 0;
+    height: 92%;
+    width: 60%;
+  }
+  .numNav {
+    display: inline-block;
+  }
+}
