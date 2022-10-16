@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/FrontendMentor-Space-Page/static/css/main.5f3863c8.css",
-    "main.js": "/FrontendMentor-Space-Page/static/js/main.59bf6365.js",
-    "static/js/787.b94b10c7.chunk.js": "/FrontendMentor-Space-Page/static/js/787.b94b10c7.chunk.js",
-    "static/media/background-home-desktop.jpg": "/FrontendMentor-Space-Page/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
-    "static/media/background-home-tablet.jpg": "/FrontendMentor-Space-Page/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
-    "static/media/background-home-mobile.jpg": "/FrontendMentor-Space-Page/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
-    "index.html": "/FrontendMentor-Space-Page/index.html",
-    "main.5f3863c8.css.map": "/FrontendMentor-Space-Page/static/css/main.5f3863c8.css.map",
-    "main.59bf6365.js.map": "/FrontendMentor-Space-Page/static/js/main.59bf6365.js.map",
-    "787.b94b10c7.chunk.js.map": "/FrontendMentor-Space-Page/static/js/787.b94b10c7.chunk.js.map"
+    "main.css": "/space-page/static/css/main.cc3cbc3a.css",
+    "main.js": "/space-page/static/js/main.356bdeee.js",
+    "static/js/787.b94b10c7.chunk.js": "/space-page/static/js/787.b94b10c7.chunk.js",
+    "static/media/background-home-desktop.jpg": "/space-page/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/background-home-tablet.jpg": "/space-page/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
+    "static/media/background-home-mobile.jpg": "/space-page/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "index.html": "/space-page/index.html",
+    "main.cc3cbc3a.css.map": "/space-page/static/css/main.cc3cbc3a.css.map",
+    "main.356bdeee.js.map": "/space-page/static/js/main.356bdeee.js.map",
+    "787.b94b10c7.chunk.js.map": "/space-page/static/js/787.b94b10c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f3863c8.css",
-    "static/js/main.59bf6365.js"
+    "static/css/main.cc3cbc3a.css",
+    "static/js/main.356bdeee.js"
   ]
 }
